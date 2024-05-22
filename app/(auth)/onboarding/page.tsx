@@ -4,6 +4,8 @@ import { currentUser } from "@clerk/nextjs";
 async function Page() {
   const user = await currentUser();
 
+  console.log("user :", user);
+
   const userInfo = {}; // fetch from DB
 
   const userData = {
